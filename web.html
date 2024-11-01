@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge Project</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="Web.css">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="logofornav.jpg" alt="">
+            </div>
+            <ul>
+                <li>
+                    <a id="home" onclick="homes()">Home</a>
+                    <a id="shop" onclick="shops()">Shops</a>
+                    <a id="blog" onclick="blogs()">Blog</a>
+                    <a id="about" onclick="abouts()">About</a>
+                    <a id="contact" onclick="contacts()">Contact</a>
+                    <a id="cart" onclick="carts()"> <img src="cart.png" alt="Cart" class="cart-img"></a>
+
+                    
+                    
+
+                </li>
+            </ul>
+        </nav>
+
+        <!-- mainpage -->
+
+        <div class="main">
+            <div class="mainText">
+                <h2>Jasim</h2>
+                <h1 class="top">Super Value Deals</h1>
+                <h1>On All Products</h1>
+                <p>Crafted with care, it’s a window into your world, inviting visitors to<br>connect, engage, and embark on a seamless shopping journey.</p>
+                <button>Explore</button>
+            </div>
+            <img src="m3.png" alt="">
+        </div>
+
+        <!-- cards -->
+
+        <div class="trend">
+            <div class="head">
+                <h1><span>Men's Wear</span></h1>
+            </div>
+            <div class="card">
+                <div class="crd">
+                    <img src="srt1.webp" alt="" onclick="show(this)">
+                    <div class="crdText">
+                        <h2>Cutton Trending Shirt's</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> <br>
+                        <button onclick='addCart({ id: 1, name: "White and Black Check Shirt", price: 10, image: "srt1.webp" })'>Add to Cart</button>
+                    </div>
+                 </div>
+
+                 <div class="crd">
+                    <img src="srt2.webp" alt="" onclick="show(this)">
+                    <div class="crdText">
+                        <h2>Cutton Trending Shirt's</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> <br>
+                        <button onclick='addCart({ id: 2, name: "Cotton shirt(summer edition)", price: 15, image: "srt2.webp" })'>Add to Cart</button>
+                    </div>
+                 </div>
+                    <div class="crd">
+                        <img src="srt6.webp" alt="" onclick="show(this)">
+                        <div class="crdText">
+                            <h2>Cutton Trending Shirt's</h2>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i> <br>
+                            <button onclick='addCart({ id: 3, name: "Summer Special Cotton Shirt", price: 20, image: "srt6.webp" })'>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Women Card -->
+
+                <div class="trend" id="trendSec">
+                    <div class="head">
+                        <h1><span>Women's Wear</span></h1>
+                    </div>
+                    <div class="card">
+                        <div class="crd">
+                            <img src="wn4.webp" alt="" onclick="show(this)">
+                            <div class="crdText">
+                                <h2>Trending Girl Top's</h2>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i> <br>
+                            <button onclick='addCart({ id: 4, name: "Pink Gown", price: 40, image: "wn4.webp" })'>Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="crd">
+                            <img src="wn5.webp" alt="" onclick="show(this)">
+                            <div class="crdText">
+                                <h2>Trending Girl Top's</h2>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i> <br>
+                            <button onclick='addCart({ id: 5, name: "Short Gown Top", price: 45, image: "wn5.webp" })'>Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="crd">
+                            <img src="wn6.webp" alt="" onclick="show(this)">
+                            <div class="crdText">
+                                <h2>Trending Girl Top's</h2>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i> <br>
+                            <button onclick='addCart({ id: 6, name: "Girl Top(summer Edition)", price: 60, image: "wn6.webp" })'>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- about us -->
+
+                <div class="about">
+
+                    <div class="aboutus">
+                        <h1>#KnowUs</h1>
+                        <p>Completed a programming course with hands-on projects, enhancing skills in Python, JavaScript, and SQL. Developed problem-solving abilities and gained practical experience in full stack development.</p>
+                    </div>
+
+                    <div class="me">
+                        <img src="lap.png" alt="">
+                        <div class="aboutText">
+                            <h1>Who am I ?</h1>
+                            <p>Professional web developer specializing in HTML, CSS, JavaScript, and modern frameworks. Passionate about creating user-friendly, dynamic websites and applications that drive business success. Collaborative, detail-oriented, and committed to leveraging cutting-edge technologies. Let's build something amazing together!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- contact -->
+
+                <div class="contact">
+
+                    <div class="contactus">
+                        <h1>#Let's Connect</h1>
+                        
+                    </div>
+
+                    <div class="contactMe">
+                        <div class="contactText">
+                            <h1>Contact with me Today</h1>
+                            <p>Address : Chittagong, Bangladesh.</p>
+                            <p>Contact : mohammadjasim229@gmail.com</p>
+                            <p>Number : 01888-228084</p>
+                        </div>
+                        <img src="map.PNG" alt="">
+                    </div>
+
+                    <div class="form">
+                        <h1>Connect with Us. Fill Form</h1>
+                        <input type="text" placeholder="Enter Email"> <br>
+                        <input type="text" placeholder="Enter Email"> <br>
+                        <input type="text" placeholder="Enter Email"> <br>
+                        <input type="text" placeholder="Enter Email"> <br>
+                        <input type="text" placeholder="Enter Email"> <br>
+                        <button>Submit</button>
+
+                    </div>
+                </div>
+                 <!-- cart -->
+
+                 <div class="cart">
+                    <img id="newImg" src="" alt="">
+                    <div class="cartText">
+                        <h1>Trends Offer : Trending Shop <br>
+                            Now</h1>
+                            <h2>Special Price</h2>
+                            <h2>$11</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                           <div class="btn">
+                            <button>Buy Now</button>
+                            <button onclick="addCart()">Add to Cart</button>
+                           </div>
+                           <button  class="back">Back</button>
+
+
+
+                    </div>
+                 </div>
+
+                <!-- blogs -->
+                <div class="trends">
+                    <div class="head">
+                        <h1>Trends <span>Men's Wear</span></h1>
+                    </div>
+                    <div class="card">
+                        <div class="blog">
+                            <img src="tr1.webp" alt="">
+                            <div class="blogText">
+                                <h2>Trending Girl Cloths</h2>
+                                <p>When it comes to fashion, visuals are key. It’s no wonder, then, that many lovers of style turn to Instagram and fashion blogs to get their fill of all things fashion. </p>
+                                <a class="textdeco" href="https://influencermarketinghub.com/best-fashion-blogs/">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="blog">
+                            <img src="tr3.webp" alt="">
+                            <div class="blogText">
+                                <h2>Trending Boys Cloths</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, animi expedita?</p>
+                                <a class="textdeco" href="https://www.apetogentleman.com/">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Letter -->
+
+                <div class="letter">
+                    <div class="letterText">
+                        <h1>Sign Up for NewsLetter</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="inp">
+                        <input type="text" placeholder="Enter Email">
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+
+                <div class="footer">
+                    <div class="footerText">
+                        <h2>Trends</h2>
+                        <p>Service </p>
+                        <p>Customer</p>
+                        <p>Satisfaction</p>
+                        <p></p>
+
+                    </div>
+                    <div class="footerText">
+                        <h2>About US</h2>
+                        <p>Adrress : Chandgaon, Chittagong, Bangladesh</p>
+                        <p>Service</p>
+                        <p>Customer</p>
+                        <p>Satisfation</p>
+
+                    </div>
+                    <div class="footerText">
+                        <h2>Contact</h2>
+                        <p>01560-035561</p>
+                        <p>Customer</p>
+                        <p>Coming up</p>
+                        <p>New Arrival</p>
+
+                    </div>
+                    <div class="footerText">
+                        <h2>Trending</h2>
+                        <p>Service</p>
+                        <p>Customer</p>
+                        <p>Shops</p>
+                        <p></p>
+
+                    </div>
+                </div>
+            </div>
+            <script src="Web.js"></script>
+</body>
+
+</html>
